@@ -1,14 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
 import { ButtonGroup } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save'
 import DeleteIcon from '@material-ui/icons/Delete'
+import { Checkbox } from '@material-ui/core';
 
 function CheckboxExample() {
+  const [checked, setChecked] = useState(true)
   return (
     <div>
-      Test
+      <Checkbox 
+        checked={checked}
+        onChange={(e) => setChecked(e.target.checked)}
+      />
     </div>
   )
 }
