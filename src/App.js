@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Button onClick={() => alert('hello')} variant="contained" color="secondary">
+        <Button 
+          onClick={() => alert('hello')}
+          size="large" 
+          variant="contained" 
+          color="secondary">
           Hello World
         </Button>
         <img src={logo} className="App-logo" alt="logo" />
