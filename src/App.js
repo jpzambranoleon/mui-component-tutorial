@@ -31,7 +31,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TextField />
+        <TextField 
+          variant="filled"
+          color="secondary"
+          type="email"
+          label="Email"
+          placeholder="test@test.com"
+        />
         <CheckboxExample />
         <ButtonGroup variant="contained" color="primary">
           <Button 
