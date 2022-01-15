@@ -3,6 +3,7 @@ import './App.css';
 import { ButtonGroup } from '@material-ui/core';
 import { Button } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save'
+import DeleteIcon from '@material-ui/icons/Delete'
 
 function App() {
   return (
@@ -18,18 +19,18 @@ function App() {
             }} 
             variant="contained" 
             color="primary">
-            Hello World
+              Save
           </Button>
           <Button 
             onClick={() => alert('hello')}
-            startIcon={<SaveIcon />}
+            startIcon={<DeleteIcon />}
             size="large"
             style = {{
               fontSize: 12
             }} 
             variant="contained" 
             color="secondary">
-            Hello World
+              Discard
           </Button>
         </ButtonGroup>
         <img src={logo} className="App-logo" alt="logo" />
