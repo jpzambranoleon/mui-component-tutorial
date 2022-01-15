@@ -17,6 +17,17 @@ function App() {
               fontSize: 12
             }} 
             variant="contained" 
+            color="primary">
+            Hello World
+          </Button>
+          <Button 
+            onClick={() => alert('hello')}
+            startIcon={<SaveIcon />}
+            size="large"
+            style = {{
+              fontSize: 12
+            }} 
+            variant="contained" 
             color="secondary">
             Hello World
           </Button>
