@@ -8,7 +8,7 @@ import DeleteIcon from '@material-ui/icons/Delete'
 import { Checkbox } from '@material-ui/core';
 import { FormControlLabel } from '@material-ui/core';
 import { TextField } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, ThemeProvider } from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -46,43 +46,45 @@ function CheckboxExample() {
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ButtonStyled />
-        <TextField 
-          variant="filled"
-          color="secondary"
-          type="email"
-          label="Email"
-          placeholder="test@test.com"
-        />
-        <CheckboxExample />
-        <ButtonGroup variant="contained" color="primary">
-          <Button 
-            onClick={() => alert('hello')}
-            startIcon={<SaveIcon />}
-            size="large"
-            style = {{
-              fontSize: 12
-            }}
-            >
-              Save
-          </Button>
-          <Button 
-            onClick={() => alert('hello')}
-            startIcon={<DeleteIcon />}
-            size="large"
-            style = {{
-              fontSize: 12
-            }}
-            >
-              Discard
-          </Button>
-        </ButtonGroup>
-        <img src={logo} className="App-logo" alt="logo" />
+    <ThemeProvider>
+      <div className="App">
+        <header className="App-header">
+          <ButtonStyled />
+          <TextField 
+            variant="filled"
+            color="secondary"
+            type="email"
+            label="Email"
+            placeholder="test@test.com"
+          />
+          <CheckboxExample />
+          <ButtonGroup variant="contained" color="primary">
+            <Button 
+              onClick={() => alert('hello')}
+              startIcon={<SaveIcon />}
+              size="large"
+              style = {{
+                fontSize: 12
+              }}
+              >
+                Save
+            </Button>
+            <Button 
+              onClick={() => alert('hello')}
+              startIcon={<DeleteIcon />}
+              size="large"
+              style = {{
+                fontSize: 12
+              }}
+              >
+                Discard
+            </Button>
+          </ButtonGroup>
+          <img src={logo} className="App-logo" alt="logo" />
 
-      </header>
-    </div>
+        </header>
+      </div>
+    </ThemeProvider>
   );
 }
 
