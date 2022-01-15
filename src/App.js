@@ -8,7 +8,10 @@ function App() {
       <header className="App-header">
         <Button 
           onClick={() => alert('hello')}
-          size="large" 
+          size="large"
+          style = {{
+            fontSize: 12
+          }} 
           variant="contained" 
           color="secondary">
           Hello World
