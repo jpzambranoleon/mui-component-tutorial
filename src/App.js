@@ -67,7 +67,7 @@ function CheckboxExample() {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Container>
+      <Container maxWidth="xs">
         <div className="App">
           <header className="App-header">
             <Typography variant='h2' component='div'>
