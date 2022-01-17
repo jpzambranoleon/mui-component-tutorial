@@ -80,8 +80,16 @@ function App() {
             </Typography>
             <ButtonStyled />
 
-            <Grid>
-              <Paper style={{ height:75, width:50, }} />
+            <Grid container>
+              <Grid item>
+                <Paper style={{ height:75, width:50, }} />
+              </Grid>
+              <Grid item>
+                <Paper style={{ height:75, width:50, }} />
+              </Grid>
+              <Grid item>
+                <Paper style={{ height:75, width:50, }} />
+              </Grid>
             </Grid>
 
             <TextField 
